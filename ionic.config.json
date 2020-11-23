@@ -1,0 +1,7 @@
+{
+  "name": "ekeyangular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
