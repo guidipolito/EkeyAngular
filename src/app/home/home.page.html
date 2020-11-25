@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Ekey - Chaves
     </ion-title>
+    <ion-searchbar placeholder="Procure uma chave especifica" (ionChange)="busca()" [(ngModel)]="inputbusca" ></ion-searchbar>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card *ngFor="let chave of listaChave" class="chavecard">
+    <img src="{{chave.image}}"/>
+    <ion-card-header>      
+      <ion-card-title routerLink="/faz-chave/{{chave.nick}}">{{chave.nome}}</ion-card-title>
+    </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content>
+      Times: {{chave.times}}
+    </ion-card-content>
+  </ion-card>
+
+  
+
 </ion-content>

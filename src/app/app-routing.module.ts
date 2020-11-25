@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'faz-chave/:nick',
+    loadChildren: () => import('./faz-chave/faz-chave.module').then( m => m.FazChavePageModule)
+  },
 ];
 
 @NgModule({
