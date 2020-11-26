@@ -7,10 +7,10 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <ion-card *ngFor="let chave of listaChave" class="chavecard">
+  <ion-card *ngFor="let chave of listaChave" class="chavecard" routerLink="/faz-chave/{{chave.nick}}">
     <img src="{{chave.image}}"/>
     <ion-card-header>      
-      <ion-card-title routerLink="/faz-chave/{{chave.nick}}">{{chave.nome}}</ion-card-title>
+      <ion-card-title >{{chave.nome}}</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>

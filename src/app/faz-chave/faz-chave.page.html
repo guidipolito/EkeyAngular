@@ -1,9 +1,124 @@
 <ion-header>
   <ion-toolbar>
     <ion-title routerLink="/home">Ekey </ion-title>
+    <meta charset="utf-8">
   </ion-toolbar>
 </ion-header>
 <ion-content>
-	<div>{{this.nick}}</div>
+	<div> 
+		<h2 [innerHTML]="titulo" ></h2>
+		<p [innerHTML]="desc"></p>
+		<p [innerHTML]='j1t2'></p>
+	</div>
+	<div *ngIf="ntimes==2">
+		<table class="table table-borderless">
+		<tr><td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t1"></td><td></td><td rowspan="2"></td></tr>
+          <tr><td class="border-top border-right border-secondary"></td></tr>
+          <tr><td></td><td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" id="j2t3"></td></tr>
+          <tr><td></td><td class=" border-right border-primary"></td></tr>
+          <tr><td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t2"></td><td class="border-bottom border-right border-secondary"></td><td></td></tr>
+          <tr><td ></td><td></td></tr>
+          
 
+</table>
+	</div>
+
+
+
+
+
+
+
+	<div *ngIf="ntimes==4">
+		<table class="table table-borderless">
+	<tr>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t1"></td>
+          <td></td>
+          <td rowspan="2"></td>
+          </tr>
+          <tr>
+          <td class="border-top border-right border-secondary"></td>
+          </tr>
+          <tr>
+          <td></td>
+          <td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" id="j2t3"></td>
+          </tr>
+          <tr>
+          <td></td>
+          <td class=" border-right border-primary"></td>
+          <td class="border-top border-right border-secondary"></td>
+          </tr>
+          <tr>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t2"></td>
+          <td class="border-bottom border-right border-secondary"></td>
+          <td></td>
+          <td class="border-right border-secondary"></td>
+
+          </tr>
+          <tr>
+          <td ></td>
+          <td></td>
+          <td class=" border-right border-secondary"></td>
+
+          </tr>
+          <tr>
+          <td ></td>
+          <td colspan="2"></td>
+
+          <td class=" border-right border-primary"></td>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary" id="j3t6"></td>
+          </tr>
+
+          <tr>
+          <td ></td>
+          <td colspan="2"></td>
+          <td class=" border-right border-secondary"></td>
+          </tr>
+          <tr>
+          <td ></td>
+          <td colspan="2"></td>
+          <td class=" border-right border-secondary"></td>
+          </tr>
+          <tr>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t4"></td>
+          <td></td>
+          <td rowspan="2"></td>
+          <td class=" border-right border-secondary"></td>
+
+          </tr>
+          <tr>
+          <td class="border-top border-right border-secondary"></td>
+          <td class=" border-right border-secondary"></td>
+          </tr>
+          <tr>
+          <td></td>
+          <td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" id="j2t5"></td> 
+          <td class="border-bottom border-right border-secondary"></td>
+          </tr>
+          <tr>
+          <td></td>
+          <td class=" border-right border-primary"></td>
+          </tr>
+          <tr>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t6"></td>
+          <td class="border-bottom border-right border-secondary"></td>
+          <td></td>
+          </tr>
+          <tr>
+          <td ></td>
+          <td></td>
+          </tr>
+
+
+</table>
+
+	</div>
+
+	<div *ngIf="ntimes==8">
+		<table class="table table-borderless">
+		
+
+		</table>
+	</div>
+	
 </ion-content>
