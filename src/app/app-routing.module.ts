@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'faz-chave/:nick',
     loadChildren: () => import('./faz-chave/faz-chave.module').then( m => m.FazChavePageModule)
   },
+  {
+    path: 'solicita/:nick',
+    loadChildren: () => import('./solicita/solicita.module').then( m => m.SolicitaPageModule)
+  },
 ];
 
 @NgModule({

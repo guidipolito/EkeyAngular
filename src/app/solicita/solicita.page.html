@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title routerLink="/faz-chave/{{nick}}" class="text-right">solicitação<span style="color: red">-></span><span style="color: blue">Voltar</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-align-items-center">
+	<br>
+	<div class="solicitaForm mx-auto">
+	<ion-item>
+  		<ion-label position="floating">Seu Email:</ion-label>
+  		<ion-input type="email"></ion-input>
+	</ion-item>
+	<ion-item>
+  <ion-label position="floating">Discord, ex: nome#7777</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+ <ion-item>
+  <ion-label position="floating">Numero de telefone:</ion-label>
+  <ion-input type="number"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Sua mensagem:</ion-label>
+  <ion-textarea></ion-textarea>
+</ion-item>
+<ion-button color="success" class="m-4" onClick="">Enviar</ion-button>
+
+</div>
+</ion-content>

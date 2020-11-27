@@ -5,18 +5,19 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-	<div> 
-		<h2 [innerHTML]="titulo" ></h2>
-		<p [innerHTML]="desc"></p>
-		<p [innerHTML]='j1t2'></p>
+	<div> <br>
+		<center><h2 [innerHTML]="titulo"></h2></center>
+		<p [innerHTML]="desc" class="m-4"></p>
+		<ion-button color="success" class="m-4" routerLink="/solicita/{{nick}}">Solicitar participação</ion-button>
+
 	</div>
-	<div *ngIf="ntimes==2">
+	<div *ngIf="ntimes==2" class="tabCore">
 		<table class="table table-borderless">
-		<tr><td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t1"></td><td></td><td rowspan="2"></td></tr>
+		<tr><td rowspan="2" class="border chavetime boxshadow border-secondary ini" [innerHTML]="j1t1"></td><td></td><td rowspan="2"></td></tr>
           <tr><td class="border-top border-right border-secondary"></td></tr>
-          <tr><td></td><td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" id="j2t3"></td></tr>
+          <tr><td></td><td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" [innerHTML]="j2t3"></td></tr>
           <tr><td></td><td class=" border-right border-primary"></td></tr>
-          <tr><td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t2"></td><td class="border-bottom border-right border-secondary"></td><td></td></tr>
+          <tr><td rowspan="2" class="border chavetime boxshadow border-secondary ini" [innerHTML]="j1t2"></td><td class="border-bottom border-right border-secondary"></td><td></td></tr>
           <tr><td ></td><td></td></tr>
           
 
@@ -29,10 +30,10 @@
 
 
 
-	<div *ngIf="ntimes==4">
+	<div *ngIf="ntimes==4" class="tabCore">
 		<table class="table table-borderless">
 	<tr>
-          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t1"></td>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" [innerHTML]="j1t1"></td>
           <td></td>
           <td rowspan="2"></td>
           </tr>
@@ -41,7 +42,7 @@
           </tr>
           <tr>
           <td></td>
-          <td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" id="j2t3"></td>
+          <td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" [innerHTML]="j2t3"></td>
           </tr>
           <tr>
           <td></td>
@@ -49,7 +50,7 @@
           <td class="border-top border-right border-secondary"></td>
           </tr>
           <tr>
-          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t2"></td>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" [innerHTML]="j1t2"></td>
           <td class="border-bottom border-right border-secondary"></td>
           <td></td>
           <td class="border-right border-secondary"></td>
@@ -66,7 +67,7 @@
           <td colspan="2"></td>
 
           <td class=" border-right border-primary"></td>
-          <td rowspan="2" class="border chavetime boxshadow border-secondary" id="j3t6"></td>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary" [innerHTML]="j3t6"></td>
           </tr>
 
           <tr>
@@ -80,7 +81,7 @@
           <td class=" border-right border-secondary"></td>
           </tr>
           <tr>
-          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t4"></td>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" [innerHTML]="j1t4"></td>
           <td></td>
           <td rowspan="2"></td>
           <td class=" border-right border-secondary"></td>
@@ -92,7 +93,7 @@
           </tr>
           <tr>
           <td></td>
-          <td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" id="j2t5"></td> 
+          <td class=" border-right border-primary"></td><td rowspan="2" class="border chavetime boxshadow border-secondary" [innerHTML]="j2t5"></td> 
           <td class="border-bottom border-right border-secondary"></td>
           </tr>
           <tr>
@@ -100,7 +101,7 @@
           <td class=" border-right border-primary"></td>
           </tr>
           <tr>
-          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" id="j1t6"></td>
+          <td rowspan="2" class="border chavetime boxshadow border-secondary ini" [innerHTML]="j1t6"></td>
           <td class="border-bottom border-right border-secondary"></td>
           <td></td>
           </tr>
