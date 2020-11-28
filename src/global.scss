@@ -26,10 +26,10 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
-ion-card{background-color: #f0f0f0}
+ion-card{--ion-background-color: #f0f0f0}
 
-ion-toolbar{--ion-background-color: black; color: white;}
+ion-toolbar{--ion-background-color: black; color: white; padding: 8px;}
 ion-header{opacity: 0.85;}
 
-ion-content{--background: url("/assets/bg.jpg") 100%}
+ion-content{--background: url("/assets/bg.jpg")}
 
