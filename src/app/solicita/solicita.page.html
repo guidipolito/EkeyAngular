@@ -9,22 +9,26 @@
 	<div class="solicitaForm mx-auto">
 	<ion-item>
   		<ion-label position="floating">Seu Email:</ion-label>
-  		<ion-input type="email"></ion-input>
+  		<ion-input type="email" [(ngModel)]="email" ></ion-input>
+	</ion-item>
+	<ion-item>
+	<ion-label position="floating">Nome da equipe:</ion-label>
+  		<ion-input  [(ngModel)]="equipe" ></ion-input>
 	</ion-item>
 	<ion-item>
   <ion-label position="floating">Discord, ex: nome#7777</ion-label>
-  <ion-input></ion-input>
+  <ion-input [(ngModel)]="discord" ></ion-input>
 </ion-item>
  <ion-item>
   <ion-label position="floating">Numero de telefone:</ion-label>
-  <ion-input type="number"></ion-input>
+  <ion-input type="number" [(ngModel)]="telefone" ></ion-input>
 </ion-item>
 
 <ion-item>
   <ion-label position="floating">Sua mensagem:</ion-label>
-  <ion-textarea></ion-textarea>
+  <ion-textarea [(ngModel)]="msg" ></ion-textarea>
 </ion-item>
-<ion-button color="success" class="m-4" onClick="">Enviar</ion-button>
+<ion-button color="success" class="m-4" (click)="solicitaAgoraVai()">Enviar</ion-button>
 
 </div>
 </ion-content>
